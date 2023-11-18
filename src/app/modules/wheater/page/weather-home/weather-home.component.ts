@@ -11,7 +11,7 @@ import { WeatherDatas } from 'src/app/models/interfaces/WeatherDatas';
 })
 export class WeatherHomeComponent implements OnInit, OnDestroy {
   private readonly destroy$: Subject<void> = new Subject();
-  initialCityName = 'São Paulo';
+  initialCityName = '';
   weatherDatas!: WeatherDatas;
   searchIcon = faMagnifyingGlass;
 
